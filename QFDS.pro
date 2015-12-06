@@ -15,10 +15,15 @@ TEMPLATE = app
 SOURCES += src\main.cpp\
         src\mainwindow.cpp \
     src\qfdshighlighter.cpp \
-    src\qhighlightercolortheme.cpp
+    src\qhighlightercolortheme.cpp \
+    src/qfdssettings.cpp \
+    qfdssettingsdialog.cpp
 
 HEADERS  += src\mainwindow.h \
     src\qfdshighlighter.h \
-    src\qhighlightercolortheme.h
+    src\qhighlightercolortheme.h \
+    src/qfdssettings.h \
+    qfdssettingsdialog.h
 
-FORMS    += src\mainwindow.ui
+FORMS    += src\mainwindow.ui \
+    qfdssettingsdialog.ui

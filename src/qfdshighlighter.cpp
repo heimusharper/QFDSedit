@@ -22,14 +22,10 @@ QFDSHighlighter::QFDSHighlighter(QTextDocument *parent) :
 
     // numbers
     numberFormat.setForeground(colorTheme.numberColor);
-    // TODO: fail pattern
     rule.pattern = QRegExp("\\d+\\.?\\d*");
     rule.format = numberFormat;
     highlightingRules.append(rule);
-
-
     numberFormatBad.setForeground(colorTheme.numberColor);
-    // TODO: fail pattern
     rule.pattern = QRegExp("\\.\\d*");
     rule.format = numberFormatBad;
     highlightingRules.append(rule);
